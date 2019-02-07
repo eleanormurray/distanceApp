@@ -102,7 +102,7 @@ estimation<-function(sampSize=51588, pA0S1 =0.916599, pLA0S1 =0.069, pLA1S1 =0.1
   #Directed Acyclic Graph
   #"true" DAG
   #nodes
-  nodes1 =create_node_df(4,type = "center", label = c('Distance (A)','Outcome (Y)', 'Selection (S)', 'Unmeasured Confounder (U)'), x = c(2.5, 6, 4, 3), y = c(-0.8, -1.5,-1.5,-2.5), 
+  nodes1 =create_node_df(4,type = "center", label = c('Distance (E)','Outcome (D)', 'Selection (S)', 'Unmeasured Confounder (U)'), x = c(2.5, 6, 4, 3), y = c(-0.8, -1.5,-1.5,-2.5), 
                          color = c('none','none','black', 'none'),
                          fillcolor = c('none','none','none', 'none'),
                          shape = c('square','square','rectangle', 'square'),
@@ -137,7 +137,7 @@ estimation<-function(sampSize=51588, pA0S1 =0.916599, pLA0S1 =0.069, pLA1S1 =0.1
     render_graph()
   
   
-  nodes2 =create_node_df(4,type = "center", label = c('Distance (A)','Outcome (Y)', 'Selection (S)', 'Unmeasured Common Cause (U)'), x = c(2.5, 6, 4, 3), y = c( -0.8, -1.5,-1.5, -2.5), 
+  nodes2 =create_node_df(4,type = "center", label = c('Distance (E)','Outcome (D)', 'Selection (S)', 'Common Cause (U)'), x = c(2.5, 6, 4, 3), y = c( -0.8, -1.5,-1.5, -2.5), 
                          color = c('none','none','black','none'),
                          fillcolor = c('none','none','none','none'),
                          shape = c('square','square','rectangle','square'),
@@ -171,7 +171,7 @@ estimation<-function(sampSize=51588, pA0S1 =0.916599, pLA0S1 =0.069, pLA1S1 =0.1
     )%>%
     render_graph()
  
-  nodes3 =create_node_df(3,type = "center", label = c('Distance (A)','Outcome (Y)','Unmeasured Confounder (U)'), x = c(4, 6, 3), y = c(0, 0, 1), 
+  nodes3 =create_node_df(3,type = "center", label = c('Distance (E)','Outcome (D)','Unmeasured Confounder (U)'), x = c(4, 6, 3), y = c(0, 0, 1), 
                          color = c('none', 'none','none'),
                          fillcolor = c('none','none','none'),
                          shape = c('square','square','square'),
