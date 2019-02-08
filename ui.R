@@ -89,14 +89,14 @@ dashboardPage(skin="black",
                 box(width = 6, 
                   box(width=6,status ="info", 
                     title = "Specify the inputs below from your study data",
-                      numericInput(paste0("rrAY"), "Risk ratio for E->D", min = 0, max = 100, value = 1.25),
-                      numericInput(paste0("lbAY"), "95% lower bound for E->D", min = 0, max = 100, value = 1.03),
-                      numericInput(paste0("ubAY"), "95% upper bound for E->D", min = 0, max = 100, value = 1.52)
+                      numericInput(paste0("rrAY"), "Risk ratio: RRed", min = 0, max = 100, value = 1.25),
+                      numericInput(paste0("lbAY"), "95% lower bound for RRed", min = 0, max = 100, value = 1.03),
+                      numericInput(paste0("ubAY"), "95% upper bound for RRed", min = 0, max = 100, value = 1.52)
                   ),
                   box(width = 6, status = "info",
                       title = "Choose based on best guess or external data",
-                      numericInput(paste0("rrUD"), "Risk ratio for U->D", min = 1, max = 100, value = 2),
-                      numericInput(paste0("rrEU"), "Risk ratio for U->E", min = 0, max = 100, value = 2)
+                      numericInput(paste0("rrUD"), "Risk ratio: RRud", min = 1, max = 100, value = 2),
+                      numericInput(paste0("rrEU"), "Risk ratio: RReu", min = 0, max = 100, value = 2)
                   )
                 ),
               box(
