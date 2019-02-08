@@ -96,7 +96,7 @@ dashboardPage(skin="black",
                   box(width = 6, status = "info",
                       title = "Choose based on best guess or external data",
                       numericInput(paste0("rrUD"), "Risk ratio for U->D", min = 1, max = 100, value = 2),
-                      numericInput(paste0("rrEU"), "Risk ratio for U->E", min = 0, max = 100, value = 2)
+                      numericInput(paste0("rrEU"), "Risk ratio for E->U", min = 0, max = 100, value = 2)
                   )
                 ),
               box(
