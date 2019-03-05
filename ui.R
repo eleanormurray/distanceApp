@@ -33,9 +33,12 @@ dashboardPage(skin="black",
                     box(width = 12, status = "info",
                         title ="References",
                         p("This app is an online supplement to:"),
-                        p("1. Caniglia EC, et al. 2018. Methodological challenges when studying distance to care as an exposure in health research. Am J Epi, under review."),
-                        p("E-value & bias-adjusted risk ratio:"),
-                        p("2. VanderWeele TJ, Ding P. Sensitivity Analysis in Observational Research: Introducing the E-Value. Annals of internal medicine 2017; 167(4):268-274.")
+                        p("Caniglia EC, et al. 2019. Methodological challenges when studying distance to care as an exposure in health research. Am J Epi, in press."),
+                        p("To download the most recent version of the shinyapp code, please visit: https://github.com/eleanormurray/distanceApp"),
+                        p("An archived version of the code to accompany Caniglia et al 2019 is also available at zenodo.org"),
+                        p(" "),
+                        p("For more information about e-values & the bias-adjusted risk ratio, see:"),
+                        p("VanderWeele TJ, Ding P. Sensitivity Analysis in Observational Research: Introducing the E-Value. Annals of internal medicine 2017; 167(4):268-274.")
                     )
                   )
                 )
