@@ -23,10 +23,10 @@ dashboardPage(skin="black",
                   box(width = 12, 
                     box(width = 12, status = "info",
                       title = "Instructions",
-                      p("1. Enter the inputs below based on your study data"),
-                      p("2. Choose the Selection Bias tab or the Confounding tab"),
+                      p("1. Choose the Selection Bias tab or the Confounding tab"),
+                      p("2. Enter the inputs below based on your study data"),
                       p("3. Specify or guess the additional inputs required for your chosen calculator"),
-                      p("4a. Compare unadjusted RR with weighted RR estimate to assess degree of selection bias."),
+                      p("4a. Compare unadjusted RR with weighted RR estimate to assess degree of selection bias"),
                       p("4b. The bias-adjusted RR is the estimated RR corrected for the chosen degree of unmeasured confounding"),
                       p("4c. The e-value estimates the minimum risk ratio between an unmeasured confounder and both the exposure and outcome in order to fully explain the observed risk ratio")
                     ),
@@ -88,14 +88,14 @@ dashboardPage(skin="black",
                 box(width = 6, 
                   box(width=6,status ="info", 
                     title = "Specify the inputs below from your study data",
-                      numericInput(paste0("rrAY"), "Risk ratio: RRed", min = 0, max = 100, value = 1.25),
-                      numericInput(paste0("lbAY"), "95% lower bound for RRed", min = 0, max = 100, value = 1.03),
-                      numericInput(paste0("ubAY"), "95% upper bound for RRed", min = 0, max = 100, value = 1.52)
+                      numericInput(paste0("rrAY"), HTML(paste("Risk ratio: RR", tags$sub('ed'), sep="")), min = 0, max = 100, value = 1.25),
+                      numericInput(paste0("lbAY"), HTML(paste("95% lower bound for RR", tags$sub('ed'), sep="")), min = 0, max = 100, value = 1.03),
+                      numericInput(paste0("ubAY"), HTML(paste("95% upper bound for RR", tags$sub('ed'), sep="")), min = 0, max = 100, value = 1.52)
                   ),
                   box(width = 6, status = "info",
                       title = "Choose based on best guess or external data",
-                      numericInput(paste0("rrUD"), "Risk ratio: RRud", min = 1, max = 100, value = 2),
-                      numericInput(paste0("rrEU"), "Risk ratio: RReu", min = 0, max = 100, value = 2)
+                      numericInput(paste0("rrUD"), HTML(paste("Risk ratio: RR", tags$sub('ud'), sep="")), min = 1, max = 100, value = 2),
+                      numericInput(paste0("rrEU"), HTML(paste("Risk ratio: RR", tags$sub('eu'), sep="")), min = 0, max = 100, value = 2)
                   )
                 ),
               box(
