@@ -4,4 +4,4 @@ This repository contains the R code necessary to deploy a Shiny app for simple s
 
 You can access the online version of this app at https://emurray.shinyapps.io/distanceApp/
 
-The code is also archived on Zenodo.
+The code is also archived on Zenodo. <a href="https://zenodo.org/badge/latestdoi/168231352"><img src="https://zenodo.org/badge/168231352.svg" alt="DOI"></a>
